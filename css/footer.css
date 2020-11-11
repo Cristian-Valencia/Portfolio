@@ -1,0 +1,23 @@
+/*This css is for the footer*/
+
+.footer{
+    background-color: #21618C;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/*this css is for the footer list*/
+
+.footer-list-container{
+    text-align: center;
+}
+
+.footer-list{
+    margin: 15px 0px 15px 0px;
+    
+    font-size: 18px;
+}
+
+.footer-link{
+    color: white;
+}

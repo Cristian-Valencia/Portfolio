@@ -1,0 +1,84 @@
+.contacts{
+    background: #2874A6 ;
+    padding-bottom: 45px;
+    margin: auto;
+    text-align: left;
+    padding-left: 15px;
+    
+}
+
+@media screen and (min-width: 1200px){
+    .contacts{
+        height: 400px;
+    }
+}
+/*
+.contect-title{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+*/
+
+@media screen and (min-width: 1200px){
+    .contacts-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contact-icon{
+    color: #DCDCDC;
+    display: block;
+}
+
+.contact-icon:before{
+/*    background-image: url('./assets/images/icon/telefono.svg');*/
+    background-size: 30px 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.contact-icon-1:before{
+    background-image: url('./../assets/images/icon/telefono.svg');
+}
+.contact-icon-2:before{
+    background-image: url('./../assets/images/icon/envelope-square-solid.svg');
+}
+.contact-icon-3:before{
+    background-image: url('./../assets/images/icon/mobile-alt-solid.svg');
+}
+.contact-icon-4:before{
+    background-image: url(./../assets/images/icon/location-arrow-solid.svg);
+}
+
+.contact-text{
+    font-size: 21px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.map-box{
+    display: none;
+}
+
+@media screen and (min-width: 1200px){
+    .map-box{
+        display: flex;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .contact-box{
+        margin-left: 20px;
+    }
+    
+}

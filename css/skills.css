@@ -1,0 +1,94 @@
+/*this css i for the Design skills*/
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.skills-design-container{
+    width: 80%;
+    background: #2E86C1;
+    margin: auto;
+    padding: 35px 0px 35px 0px;
+    border-radius: 4%;
+}
+
+
+
+.skills-design-list-title{
+     text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.skills-design-list-title:before, 
+.skills-code-list-title:before{
+/*    background-image: url('./assets/images/icon/telefono.svg');*/
+    background-size: 40px 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    content: "";
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.design-icon:before{
+    background-image: url('./../assets/images/icon/design-icon.svg');
+    color: white;
+}
+
+.skills-design-list{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+
+
+
+
+/*this css is for the Coding skills*/
+.skills-code-container{
+    width: 80%;
+    background: #2E86C1;
+    margin: auto;
+    margin-top: 40px;
+    padding: 35px 0px 35px 0px;
+    border-radius: 4%;
+}
+
+@media screen and (min-width: 1200px){
+    .skills-design-container, 
+    .skills-code-container{
+        width: 45%;
+        margin: 0px;
+        
+    }
+}
+
+.skills-code-list-title{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.code-icon:before{
+    background-image: url('./../assets/images/icon/code-icon.svg');
+}
+
+
+.skills-code-list{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
