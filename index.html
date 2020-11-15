@@ -1,273 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<html>
-    
-    <head>
-        <title>Cristian's Portfolio</title>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/contacts.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/skills.css">
-        <link rel="stylesheet" href="css/project.css">
-        
-    </head>
-    
-    <body>
-        
-        
-    <!--This is nav-section for mobile-->
-        
-      <div class="navigation-mobile"> 
-            <div class="rectangle">   
-                <img class="hamburger" src="assets/images/png/Hamburger_icon.png" alt="hamburger icon">
-                <img class="logo" src="assets/images/png/CV.png" alt="logo">
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-            </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-            <nav class="navigation">
-
-                <ul class="list-navigation">
-                    <li class="lists">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="lists">
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-                    <li class="lists">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="lists">
-                        <a href="#contacts" class="nav-link">Contacts</a>
-                    </li>
-                </ul>
-
-            </nav>
-          
-        </div> 
-        
-        <!--This is nav-section for desktop-->
-
-        <nav class="navigation-desktop">
-            
-            <img class="logo" src="assets/images/png/CV.png" alt="logo">
-
-            <ul class="list-navigation-desktop">
-                
-                <li class="lists-desktop">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="lists-desktop">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="lists-desktop">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="lists-desktop">
-                    <a href="#contacts" class="nav-link">Contacts</a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <!--This is home section-->
-
-        <div class="home" id="home">
-
-            <img src="assets/images/png/Senza%20titolo-1.png" alt="My image" class="user"> 
-            <h1 class="cristian">Hi! I'm Cristian!</h1>
-            <h2 class="didascaly">I design &amp; build user interfaces!</h2>
-
-
-        </div>
-
-
-    <!-- This is Skills Section-->
-        <div class="skills-container" id="skills">
-          <h2 class="title">Skills</h2>
-
-            <div class="skills-design-container">
-                <ul>
-                    <li class="skills-design-list-title design-icon">Design</li>
-                    <li class="skills-design-list">Photoshop</li>
-                    <li class="skills-design-list">Illustrator</li>
-                    <li class="skills-design-list">Flash</li>
-                    <li class="skills-design-list">Premiere</li>
-                </ul>
-            </div>
-
-            <div class="skills-code-container">
-                <ul>
-                    <li class="skills-code-list-title code-icon">Coding</li>
-                    <li class="skills-code-list">HTML</li>
-                    <li class="skills-code-list">CSS</li>
-                    <li class="skills-code-list">JQuery</li>
-                    <li class="skills-code-list">Javascript</li>
-                </ul>
-            </div>
-
-
-        </div>
-
-        <div class="projects" id="projects">
-            <h2 class="title">Projects</h2>
-            <div class="project-image-container">
-                <div class="project-image-box">
-                    <img class="project-image" src="assets/images/jpeg/off.png">
-                </div>
-                <div class="project-image-box">
-                    <img class="project-image" src="assets/images/jpeg/games.png">
-                </div>
-                <div class="project-image-box">
-                    <img class="project-image" src="assets/images/jpeg/candle.png">
-                </div>
-            </div>
-        </div>
-        <div class="contacts" id="contacts">
-            <h2 class="title">Get in touch!</h2>
-            <div class="contacts-container">
-                <div class="map-box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.25709415347!2d12.395912778753608!3d41.91024148775022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%20RM!5e0!3m2!1sit!2sit!4v1603806003179!5m2!1sit!2sit" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="contact-box">
-                    <a class="contact-icon contact-icon-1 contact-text" href="tel:0733899222">0733899222</a>
-                    <a class="contact-icon contact-icon-2 contact-text" href="mailto:cristianvalencia1997@live.it">
-                        cristianvalencia1997@live.it
-                    </a>
-                    <a class="contact-icon contact-icon-3 contact-text" href="tel:32759699912">32759699912</a>
-                    <a class="contact-icon contact-icon-4 contact-text" href="https://www.google.com/maps/place/Roma+RM/@41.9102415,12.3959128,11z/data=!3m1!4b1!4m5!3m4!1s0x132f6196f9928ebb:0xb90f770693656e38!8m2!3d41.9027835!4d12.4963655">
-                        Roma RM
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <ul class="footer-list-container">
-                <li class="footer-list">
-                    <a href="#home" class="footer-link">Home</a>
-                </li>
-                <li class="footer-list">
-                    <a href="#skills" class="footer-link">Skills</a>
-                </li>
-                <li class="footer-list">
-                    <a href="#projects" class="footer-link">Projects</a>
-                </li>
-                <li class="footer-list">
-                    <a href="#contacts" class="footer-link">Contacts</a>
-                </li>
-
-            </ul>
-        </div>   
-        
-        <script>
-            var cristianAge = 20;
-            var cristianaAge = 22;
-            var nameOne = "cristian";
-            var nameTwo = "cristiana";
-            
-            console.log(nameTwo)
-            
-            // un condizione per sapere chi deve pulire la casa
-            // chi è più giovane pulisce la casa
-            
-            if(cristianAge > cristianaAge) {
-               console.log(`${nameTwo} deve pulire la casa`)
-            } else {
-               console.log(`${nameOne} deve pulire la casa`)
-            }
-            
-            //trova la media voto di Dave con queste tre materie
-            //se lui supera 80% stampiamo che lui ha superato l'anno
-            //sennò stampiamo che lui è stato bocciato 
-            
-            var subjectOne = 90;
-            var subjectTwo = 99;
-            var subjectThree = 92;
-            var average = (subjectOne + subjectTwo + subjectThree) / 3;
-            var passingGrade = 90;
-            
-            console.log("AVERAGE =", average);
-            
-            
-            //Create a function that returns the sum of two numbers
-            //Create a function that returns the average grade of a student in these subjects: English, Math, Science, History
-            
-            function dave() {
-                if(average > 70 || average < 92) {
-                    console.log("dave è passato")
-                } else {
-                    console.log("dave non è passato")
-                }
-            }
-            
-            dave();
-            
-            function media(english, math, science, history) {
-                return (english + math + science + history) / 4;
-            }
-            
-            console.log(media(70, 40, 30, 25));
-            
-            function addingString(numOne, numTwo){
-                return numOne + numTwo;
-            }
-            
-            console.log(addingString("22", "58"));
-            
-            function addingNumbers(numberOne, numberTwo){
-                return numberOne + numberTwo;
-            }
-            
-            console.log(addingNumbers("22", 58));
-            
-            
-            
-            function characterName(name){
-                return name;
-            }
-            
-            console.log(characterName("Cris"));
-            
-            
-            //arrays
-            
-            var items = ["Bottle", 4, true];
-            
-            
-            console.log(items[2]);
-            
-            console.log(items.length);
-
-            let user = {
-                name: 'Cristian',
-                age: 23,
-                login: function(){
-                    console.log('hello')
-                }
-            };
-            
-        
-            let userTwo = {
-                name: 'Cristian',
-                age: 23,
-                login: function(){
-                    console.log('ciao')
-                }
-            };
-
-            userTwo.login();
-        
-        
-        </script>
-    </body>
-
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
